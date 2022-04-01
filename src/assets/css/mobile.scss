@@ -1,0 +1,106 @@
+
+// .van-button--default:hover{
+//     color: #FFD64A;
+//     border-color: #5b4e24;
+//     background-color: #2c2719;
+// }
+.van-popup , .van-dropdown-menu__bar ,  .van-cell{
+    background-color: var(--footer-background-color)
+  }
+  .van-cell{
+      color:var(--text-color)
+  }
+  .van-dropdown-item__option--active {
+      color:var(--hover-color)
+  }
+  .van-search .van-cell{
+      background-color: transparent;
+  }
+  .van-button{
+      height:34px;
+      padding:0 8px;
+  }
+.van-button--default {
+    color: #FFF;
+    background: #141414;
+    border: 1px solid #979797;
+}
+.van-button--primary{
+    color: #141414;
+    background-color: #FFD64A;
+    border-color: #FFD64A;
+}
+.van-button--info{
+    color: #FFF;
+    background-color: #979797;
+    border-color: #979797;
+}
+.van-button--danger{
+    background: #d05b5b;
+    border-color: #d05b5b;
+    color: #141414;
+}
+.van-button--warning{
+    color: #FFF;
+    background-color: #FFCE6D;
+    border-color: #FFCE6D;
+}
+
+.van-tag{
+    height:34px;
+    font-size:14px;
+    padding:0 8px;
+}
+.van-tag--primary{
+    background-color: transparent;
+    color:#CFAE40;
+    border:1px #5F522B solid;
+}
+.van-tag--success{
+    background-color: transparent;
+    color:#78E88E;
+    border:1px #3A593F solid;
+}
+.van-tag--warning{
+    background-color: transparent;
+    color:#E96E6E;
+    border:1px #5A3736 solid;
+}
+.van-search__content{
+    background-color: #21201E;
+    border:solid 1px #494848;
+    
+}
+.van-field__control{
+    color:#fff;
+}
+.van-field__left-icon{
+    color:#fff;
+}
+
+.van-pagination__item{
+    background-color: transparent;
+    color:#fff;
+    height:34px;
+}
+
+.van-pagination__item--active{
+    background-color: var(--color-6);
+}
+[class*=van-hairline]::after{
+    border: var(--status-bar-tools-border);
+}
+
+.van-dropdown-menu__title{
+    color:var(--text-color);
+    background-color: #21201E;
+    border: solid 1px #494848;
+    padding: 5px 8px 5px ;
+    width: 120px;
+    line-height: 24px;
+    font-size: 14px;
+    text-align: left;
+}
+.van-dropdown-menu__title::after{
+    display: none;
+}

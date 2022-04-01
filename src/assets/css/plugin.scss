@@ -1,0 +1,38 @@
+.plugin-add {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color-weak);
+}
+
+.plugin-item {
+  border: var(--status-bar-tools-border);
+  margin: 8px;
+  width: calc(100% / 4 - 16px - 1.1px * 2);
+  position: relative;
+  background-color: var(---status-bar-bg-color);
+}
+.plugin-add-h{
+  height: 204px;
+}
+.plugin-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.stu-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.stu-dot-primary {
+  background-color: var(--yellow);
+}
+.stu-dot-warning {
+  background-color: var(--green);
+}
+.stu-dot-danger {
+  background-color: var(--red);
+}

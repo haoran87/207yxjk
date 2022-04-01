@@ -1,0 +1,275 @@
+export const routerList = [
+    {
+        id: 1,
+        title: "首页",
+        path: "/home-page/home-page",
+        parentName: "",
+        parentId: "",
+        isShow: true,
+        children: [],
+    },
+    {
+        id: 10,
+        title: "插件监控",
+        path: "/monitor-page/plugin-info",
+        parentName: "",
+        parentId: "",
+        isShow: true,
+        children: [],
+    },
+    {
+        id: 11,
+        title: "服务管理",
+        path: "/monitor-page/service-page",
+        parentName: "",
+        parentId: "",
+        isShow: true,
+        children: [],
+    },
+    {
+        id: 2,
+        title: "运行监控",
+        path: "",
+        parentName: "",
+        parentId: "",
+        isShow: true,
+        children: [
+            {
+                id: 202,
+                title: "插件管理",
+                path: "/monitor-page/plugin",
+                parentName: "运行监控",
+                parentId: 2,
+                children: [],
+            },
+            {
+                id: 203,
+                title: "原始数据",
+                path: "/monitor-page/basic-data",
+                parentName: "运行监控",
+                parentId: 2,
+                children: [],
+            },
+            {
+                id: 204,
+                title: "进程监控",
+                path: "/monitor-page/process",
+                parentName: "运行监控",
+                parentId: 2,
+                children: [],
+            },
+            {
+                id: 205,
+                title: "网络监控",
+                path: "/monitor-page/internet",
+                parentName: "运行监控",
+                parentId: 2,
+                children: [],
+            },
+            //软件监控与服务监控是同一个需求，去掉该菜单
+            // {
+            //     id: 206,
+            //     title: "软件监控",
+            //     path: "/monitor-page/software",
+            //     parentName: "运行监控",
+            //     parentId: 2,
+            //     children: [
+
+            //     ],
+            // },
+            {
+                id: 207,
+                title: "拓扑管理",
+                path: "/topo-page/topo-manage",
+                parentName: "运行监控",
+                parentId: 2,
+                children: [],
+            },
+            {
+                id: 208,
+                title: "查看日志",
+                path: "/monitor-page/scan-log",
+                parentName: "运行监控",
+                parentId: 2,
+                children: [
+
+                ],
+            }
+        ],
+    },
+    {
+        id: 3,
+        title: "告警管理",
+        path: "",
+        parentName: "",
+        parentId: "",
+        isShow: true,
+        children: [
+            {
+                id: 301,
+                title: "告警信息",
+                path: "/alarm-page/info/info-page",
+                parentName: "告警管理",
+                parentId: 3,
+                children: [],
+            },
+            {
+                id: 302,
+                title: "告警模板",
+                path: "/alarm-page/template/template-page",
+                parentName: "告警管理",
+                parentId: 3,
+                children: [],
+            },
+            {
+                id: 303,
+                title: "告警通知",
+                path: "/alarm-page/notice/notice-page",
+                parentName: "告警管理",
+                parentId: 3,
+                children: [],
+            },
+            {
+                id: 304,
+                title: "故障知识",
+                path: "/alarm-page/fault/fault-page",
+                parentName: "告警管理",
+                parentId: 3,
+                children: [],
+            },
+        ],
+    },
+    {
+        id: 4,
+        title: "系统自检",
+        path: "/system-check/system-page",
+        parentName: "",
+        parentId: "",
+        isShow: true,
+        children: [
+            // {
+            //     id: 401,
+            //     title: "接口管理",
+            //     path: "/system-check/system-check",
+            //     parentName: "系统自检",
+            //     parentId: 4,
+            //     children: [
+
+            //     ],
+            // },
+        ],
+    },
+    {
+        id: 5,
+        title: "配置中心",
+        path: "",
+        parentName: "",
+        parentId: "",
+        isShow: true,
+        children: [
+            {
+                id: 501,
+                title: "配置下发",
+                path: "/configure-page/configureSend/send-page",
+                parentName: "配置中心",
+                parentId: 5,
+                children: [],
+            },
+            {
+                id: 502,
+                title: "IP管理",
+                path: "/configure-page/ipManege/ip-list",
+                parentName: "配置中心",
+                parentId: 5,
+                children: [],
+            },
+            {
+                id: 503,
+                title: "配置模板",
+                path: "/configure-page/configureTemplate/template-list",
+                parentName: "配置中心",
+                parentId: 5,
+                children: [],
+            },
+        ],
+    },
+    /*        {
+                id: 6,
+                title: "信息目录",
+                path: "",
+                parentName: "",
+                parentId: 6,
+                isShow: true,
+                children: [{
+                    id: 601,
+                    title: "信息编目",
+                    path: "",
+                    parentName: "信息目录",
+                    parentId: 2,
+                    children: [
+
+                    ],
+                },
+                {
+                    id: 602,
+                    title: "信息管理",
+                    path: "",
+                    parentName: "信息目录",
+                    parentId: 6,
+                    children: [
+
+                    ],
+                },],
+            }, */
+    {
+        id: 7,
+        title: "权限设置",
+        path: "",
+        parentName: "",
+        parentId: "",
+        isShow: true,
+        children: [
+            {
+                id: 704,
+                title: "字典管理",
+                path: "/permission/sysDict",
+                parentName: "字典管理",
+                parentId: 7,
+                children: [],
+            }, {
+                id: 701,
+                title: "账号权限",
+                path: "/permission/role/role-list",
+                parentName: "权限设置",
+                parentId: 7,
+                children: [],
+            },
+            {
+                id: 703,
+                title: "采集端管理",
+                path: "/monitor-page/device-manage",
+                parentName: "",
+                parentId: "7",
+                children: [],
+            },
+            {
+                id: 702,
+                title: "系统日志",
+                path: "/permission/log/log-list",
+                parentName: "权限设置",
+                parentId: 7,
+                children: [],
+            }
+
+        ],
+    },
+    {
+        id: 8,
+        title: "图表管理",
+        path: "/monitor-page/chart-manage",
+        parentName: "",
+        parentId: "",
+        isShow: false,
+        children: [],
+    }
+]

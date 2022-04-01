@@ -1,0 +1,87 @@
+#app {
+  text-align: center;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  color: var(--text-color);
+  /*font-family: "汉仪菱心";*/
+  -moz-user-select: none; /*火狐*/
+  -webkit-user-select: none; /*webkit浏览器*/
+  -ms-user-select: none; /*IE10*/
+  -khtml-user-select: none; /*早期浏览器*/
+  user-select: none;
+}
+* { touch-action: pan-y; }
+/*.font-e{
+   font-family: "eurostile";
+ }*/
+.yqxxkjStyle{
+  --yellow:#FFCC00;
+  --green:#7bee91;
+  --red:#ff7777;
+  .open-color{
+    color:var(--green);
+  }
+  .close-color{
+    color:var(--red);
+  }
+
+  .primary-color{
+    color:var(--text-color);
+  }
+  .warning-color{
+    color:var(--yellow);
+  }
+  .danger-color{
+    color:var(--red);
+  }
+  .bottom-bg {
+    background-color: var(--footer-background-color);
+  }
+  .alert-bg{
+    background-color:var(--layout-bg-3);
+  }
+  .module-bg{
+    background-color:var(--layout-bg-1)
+  }
+  .pop-border{
+    border: var(--status-bar-tools-border);
+  }
+  .pop-bg{
+    background-color:var(--layout-bg-3);
+  }
+
+  .selected-color{
+    color:var(--color-6)
+  }
+  .text-line-only{
+    word-break:break-all;
+    display:-webkit-box;
+    -webkit-line-clamp:1;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+  }
+  .text-line-double{
+    word-break:break-all;
+    display:-webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+  }
+  .el-dialog__wrapper{
+    z-index: 1002 !important;
+  }
+  .v-modal{
+    z-index: 1001 !important;
+  }
+
+  @import 'plugin.scss';
+
+  @import 'table.scss';
+
+  @import  'input.scss';
+
+  @import 'topoEdit.scss';
+
+  @import 'mobile.scss';
+}

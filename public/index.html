@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+  <%=
+  process.env.NODE_ENV==='production' ? '<link rel="stylesheet" href="/TIS_LIB/tis-ui/theme-chalk/index.css">'
+    + '<link rel="stylesheet/less" href="/TIS_APP_FRAME_YXJK/yq-ui/yq_theme.less">'
+    : '<link rel="stylesheet" href="http://localhost:9902/tis-ui/theme-chalk/index.css">' 
+    +'<link rel="stylesheet/less" href="http://localhost:9902/yq-ui/yq_theme.less">' 
+    %>
+   <script>
+     
+   </script>
+</head>
+
+<body style="height: 100%;">
+  <noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+        Please enable it to continue.</strong>
+  </noscript>
+  <div id="app"></div>
+  <script type="text/javascript">window.ENV = '<%=process.env.NODE_ENV%>' </script>
+  <!-- built files will be auto injected -->
+  <%=process.env.NODE_ENV==='production' ? '<script src="/TIS_LIB/vue/vue.js"></script>'
+    + '<script src="/TIS_LIB/tis-ui/index.js"></script>'
+    + '<script src="/TIS_APP_FRAME_YXJK/yq-ui/config.js"></script>': '<script src="http://localhost:9902/vue/vue.js"></script>'
+    + '<script src="http://localhost:9902/yq-ui/config.js"></script>'
+    + '<script src="http://localhost:9902/tis-ui/index.js"></script>' %>
+</body>
+</html>

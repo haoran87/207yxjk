@@ -1,0 +1,23 @@
+{
+  "name": "运行监控",
+  "components": [
+    {
+      "name": "组件测试用例",
+      "component": "testApp",
+      "icon": "icon-huojian",
+      "segprefix": "TIS_COMPONET_EXAMPLE",
+      "dependencies": ["tis-component-demo-2"]
+    },
+    {
+      "name": "组件测试用例2",
+      "component": "testApp2",
+      "icon": "icon-huojian",
+      "segprefix": "tis-component-demo-2"
+    },
+    {
+      "name":"kt应用市场代码",
+      "component":"pcmarket",
+      "segprefix":"TIS_YYSC"
+    }
+  ]
+}
